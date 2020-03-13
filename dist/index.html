@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Library</title>
+  <style>
+      body{font-size: 1.5em;}
+      .container{margin:40px; margin-top:60px;}
+      button{
+        width: 200px;
+        background: gray;
+        padding: 10px;
+        margin: 20px auto;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        display: block;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- tooltip -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+       esse accusamus tempore nobis porro exercitationem incidunt <span class="tooltip"
+       data-message="Im a tooltip">Tool</span>
+       excepturi facere est laborum modi, consequuntur, placeat consectetur
+       distinctio dolores soluta explicabo ad dolorem.
+    </p>
+
+    <div class="dropdown">
+      <div class="trigger">Awsome T-shirt Designs</div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Cum, architecto velit nesciunt facilis sit molestias rerum 
+          adipisci delectus culpa, ab cumque placeat corporis nisi 
+          reprehenderit accusamus totam rem sed voluptates?
+        </p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Cool Sticker Printing</div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Cum, architecto velit nesciunt facilis sit molestias rerum 
+          adipisci delectus culpa, ab cumque placeat corporis nisi 
+          reprehenderit accusamus totam rem sed voluptates?
+        </p>
+      </div>
+    </div>
+
+    <h2>More Information</h2>
+    <!-- Tabs -->
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">About</li>
+        <li class="trigger" data-target="#delivery">About</li>
+        <li class="trigger" data-target="#returns">About</li>
+      </ul>
+      <div id="about" class="content active">
+        <h3>about</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing 
+          elit. Neque necessitatibus, harum inventore temporibus 
+          quam veniam quia adipisci ducimus ab. Ducimus cupiditate 
+          ad ipsum dicta, adipisci asperiores corporis eum quae harum?\
+        </p>
+      </div>
+
+      <div id="delivery" class="content">
+        <h3>Delivery</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing 
+          elit. Neque necessitatibus, harum inventore temporibus 
+          quam veniam quia adipisci ducimus ab. Ducimus cupiditate 
+          ad ipsum dicta, adipisci asperiores corporis eum quae harum?\
+        </p>
+      </div>
+
+      <div id="returns" class="content">
+        <h3>Returns</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing 
+          elit. Neque necessitatibus, harum inventore temporibus 
+          quam veniam quia adipisci ducimus ab. Ducimus cupiditate 
+          ad ipsum dicta, adipisci asperiores corporis eum quae harum?\
+        </p>
+      </div>
+
+
+    </div>
+
+    <div>
+      <button class="snackbar-trigger">Click Me</button>
+    </div>
+
+
+
+  </div>
+
+  <script src="assets/bundle.js"></script>
+</body>
+</html>
